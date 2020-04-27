@@ -32,7 +32,7 @@ python ./eval_nirvis2.py ./rcn10_NIR_VIS.caffemodel ./deploy.prototxt /path/to/d
 
 Note:
 
-* The alignment of face images should be the same as RCN. Otherwise one could fine-tune rcn10_NIR_VIS.caffemodel on the CASIA NIR-VIS 2.0 with your own aligment.
+* The alignment of face images should be the same as RCN. Otherwise one could fine-tune rcn10_NIR_VIS.caffemodel on the CASIA NIR-VIS 2.0 with his own aligment.
 
 ## Citation
 
