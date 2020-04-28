@@ -8,7 +8,12 @@ The experiments is conducted under Caffe and its python interface.
 ## Training
 
 1. prepare training and testing sets of CASIA NIR-VIS 2.0, then modify the file lists in train_rcn10_NIR_VIS.prototxt
-2. add/implement new layers (Normalization layer and CosineLoss layer) to your Caffe
+2. add/implement new layers (Normalization layer and CosineLoss layer) to your Caffe.
+
+* Normalizaiton layer can be easily found in other caffe repository which is usde for L2 normalization. (You might need to modify the param of Normalizaiton layer in the train_rcn10_NIR_VIS.prototxt so as to adapt to your Normalizaiton layer.)
+
+* Files of CosineLoss layer is provided under the folder *caffe_cosine_loss_layer*. CosineLoss layer only calculates the dot product between the feature vectors of paired input images, so Normalizaiton layer should be used before CosineLoss layer.
+
 3. train (fine-tune) with instruction like this
 
 ```
