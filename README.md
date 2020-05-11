@@ -29,7 +29,9 @@ Note:
 ## Test
 
 1. read the instructions in eval_nirvis2.py and do necessary modifications (e.g. caffe path)
-2. run eval_nirvis2.py like this
+2. install python 2.7 and some other python packages, e.g. docopt, cPickle, sklearn, PIL, numpy.
+
+3. run eval_nirvis2.py like this
 
 ```
 python ./eval_nirvis2.py ./rcn10_NIR_VIS.caffemodel ./deploy.prototxt /path/to/dataset tmp/nirvis2_casianet.pkl
@@ -37,7 +39,7 @@ python ./eval_nirvis2.py ./rcn10_NIR_VIS.caffemodel ./deploy.prototxt /path/to/d
 
 Note:
 
-* The alignment of face images should be the same as RCN. Otherwise one could fine-tune rcn10_NIR_VIS.caffemodel on the CASIA NIR-VIS 2.0 with his own aligment.
+* The alignment of face images should be the same as RCN. Otherwise one could try to fine-tune rcn10_NIR_VIS.caffemodel on the CASIA NIR-VIS 2.0 with his own aligment (the performance might be different).
 
 ## Citation
 
